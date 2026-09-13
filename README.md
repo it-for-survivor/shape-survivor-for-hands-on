@@ -11,7 +11,7 @@ Zennの書籍「ゼロから始めるGodotゲーム開発 〜作って学ぶ「S
 
 書籍本体は以下から読めます。
 
-- 📖 Zenn: 近日公開予定
+- 📖 Zenn: [ゼロから始めるGodotゲーム開発 〜作って学ぶ「Shape Survivor」〜](https://zenn.dev/yurinchi/books/01ecd492dc6adf)
 - 🎥 YouTube: [おやこでペアプロTV](https://www.youtube.com/@%E3%81%8A%E3%82%84%E3%81%93%E3%81%A7%E3%83%9A%E3%82%A2%E3%83%97%E3%83%ADTV)（解説動画は章ごとに順次公開）
 
 ## リポジトリの使い方
