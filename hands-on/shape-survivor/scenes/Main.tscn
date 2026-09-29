@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://didpau20hhvha"]
 
 [ext_resource type="PackedScene" uid="uid://b88y381luwmjd" path="res://scenes/Player.tscn" id="1_elqb8"]
+[ext_resource type="Script" uid="uid://ff836e6oe1q5" path="res://scripts/Background.gd" id="2_rvslj"]
 
 [node name="Main" type="Node2D" unique_id=51858551]
 
-[node name="Background" type="ColorRect" parent="." unique_id=1996830326]
-offset_right = 960.0
-offset_bottom = 540.0
-color = Color(0.07058824, 0.07058824, 0.09019608, 1)
+[node name="Background" type="Node2D" parent="." unique_id=1511110419]
+script = ExtResource("2_rvslj")
 
 [node name="Player" parent="." unique_id=1022972633 instance=ExtResource("1_elqb8")]
+position = Vector2(1000, 1000)

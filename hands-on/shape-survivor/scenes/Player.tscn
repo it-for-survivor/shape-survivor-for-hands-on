@@ -11,3 +11,9 @@ script = ExtResource("1_p0vlq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2119739916]
 shape = SubResource("CircleShape2D_miwry")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=73705996]
+limit_left = 0
+limit_top = 0
+limit_right = 2000
+limit_bottom = 2000
