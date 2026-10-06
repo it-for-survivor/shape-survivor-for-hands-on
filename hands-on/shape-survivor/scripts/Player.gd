@@ -15,3 +15,6 @@ func _physics_process(_delta: float) -> void:
 	velocity = input_dir * speed
 	move_and_slide()
 	position = position.clamp(Vector2.ZERO, Game.WORLD_SIZE)
+
+func take_damage(amount: int) -> void:
+	print("player took damage: ", amount)
