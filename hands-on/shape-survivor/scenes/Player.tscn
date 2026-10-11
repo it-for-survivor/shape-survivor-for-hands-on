@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://b88y381luwmjd"]
 
 [ext_resource type="Script" uid="uid://s4xik3u7u3a8" path="res://scripts/Player.gd" id="1_p0vlq"]
+[ext_resource type="Script" uid="uid://7rx2xehdccbf" path="res://scripts/Weapon.gd" id="2_3li8b"]
+[ext_resource type="PackedScene" uid="uid://bd3mjk5l5wtlq" path="res://scenes/Bullet.tscn" id="3_mdl7e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_miwry"]
 radius = 16.0
@@ -17,3 +19,7 @@ limit_left = 0
 limit_top = 0
 limit_right = 2000
 limit_bottom = 2000
+
+[node name="Weapon" type="Node2D" parent="." unique_id=2083552089]
+script = ExtResource("2_3li8b")
+bullet_scene = ExtResource("3_mdl7e")
