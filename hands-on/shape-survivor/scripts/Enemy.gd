@@ -1,13 +1,21 @@
 extends CharacterBody2D
 
 @export var speed: float = 90.0
+@export var max_health: int = 2
 
 var _target: Node2D
+var health: int
 
 func _ready() -> void:
 	add_to_group("enemy")
+	health = max_health
 	_target = get_tree().get_first_node_in_group("player")
 	$Hitbox.body_entered.connect(_on_hitbox_body_entered)
+
+func take_damage(amount: int) -> void:
+	health -= amount
+	if health <= 0:
+		call_deferred("queue_free")
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player") and body.has_method("take_damage"):
