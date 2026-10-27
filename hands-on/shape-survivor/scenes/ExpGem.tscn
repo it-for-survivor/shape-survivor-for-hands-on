@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bgp86ag0pekug"]
+
+[ext_resource type="Script" uid="uid://b74lk1jslenuk" path="res://scripts/ExpGem.gd" id="1_4l4gw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_inm2p"]
+radius = 7.0
+
+[node name="ExpGem" type="Area2D" unique_id=1265548886]
+collision_layer = 0
+script = ExtResource("1_4l4gw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1127751746]
+shape = SubResource("CircleShape2D_inm2p")

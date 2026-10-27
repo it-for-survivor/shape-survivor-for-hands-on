@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bhtdv6xpnpgkt"]
 
 [ext_resource type="Script" uid="uid://y5hytld1itgd" path="res://scripts/Enemy.gd" id="1_3gvst"]
+[ext_resource type="PackedScene" uid="uid://bgp86ag0pekug" path="res://scenes/ExpGem.tscn" id="2_55jtl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_miwry"]
 radius = 14.0
@@ -12,6 +13,7 @@ radius = 14.0
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_3gvst")
+exp_gem_scene = ExtResource("2_55jtl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=62154354]
 shape = SubResource("CircleShape2D_miwry")
