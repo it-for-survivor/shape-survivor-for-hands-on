@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 signal died
+signal leveled_up
 
 @export var speed: float = 220.0
 @export var radius: float = 16.0
@@ -34,7 +35,17 @@ func _level_up() -> void:
 	level += 1
 	exp -= exp_to_next_level
 	exp_to_next_level = int(exp_to_next_level * 1.3)
-	print("level up! now level ", level)
+	leveled_up.emit()
+
+func apply_upgrade(upgrade_id: String) -> void:
+	match upgrade_id:
+		"speed":
+			speed *= 1.1
+		"fire_rate":
+			$Weapon.fire_interval *= 0.85
+		"max_health":
+			max_health += 1
+			health += 1
 
 func _physics_process(_delta: float) -> void:
 	var input_dir := Input.get_vector("move_left", "move_right", "move_up", "move_down")

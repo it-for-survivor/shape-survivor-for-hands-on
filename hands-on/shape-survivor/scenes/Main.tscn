@@ -31,3 +31,39 @@ theme_override_font_sizes/font_size = 48
 text = "GAME OVER"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="LevelUpPanel" type="Control" parent="UI" unique_id=1765632051]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/LevelUpPanel" unique_id=1266823818]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SpeedButton" type="Button" parent="UI/LevelUpPanel/VBoxContainer" unique_id=1861381433]
+layout_mode = 2
+text = "移動速度 +10%"
+
+[node name="FireRateButton" type="Button" parent="UI/LevelUpPanel/VBoxContainer" unique_id=1260493157]
+layout_mode = 2
+text = "攻撃速度 +15%"
+
+[node name="MaxHealthButton" type="Button" parent="UI/LevelUpPanel/VBoxContainer" unique_id=639173876]
+layout_mode = 2
+text = "最大HP +1"
